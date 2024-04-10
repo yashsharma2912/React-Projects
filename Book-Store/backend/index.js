@@ -3,13 +3,13 @@ import mysql from "mysql"
 
 const app = express()
 
-//Database Connection String
+// Database Connection String
 
 const db = mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"Yash@123",
-    database:"bookstore"
+    password:"root",
+    database:"test"
 })
 
 app.get("/",(req,res) => {
