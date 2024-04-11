@@ -6,23 +6,34 @@
     box-sizing: border-box;
 }
 .navbar{
-    position: sticky;
-    top: 0;
+  
+    &.active{
+        background-color: #fff;
+        color: black;
+    }
 }
 .container{
-
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    z-index: 999;
 font-family: "Montserrat", sans-serif;
  
  text-wrap: nowrap;
  font-weight: 500;
- color: #000000;
+ color: #fff;
     
     .topNav{
-        padding: 1vw 10vw;
-        // background-color: #06431A;
+        padding: 1vw 12vw;
+        background-color: #06431A;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &.active{
+            transition: all ease 2s;
+            background-color: white;
+            color: black;
+        }
         .left{
           display: flex;
           align-items: center;
@@ -36,6 +47,7 @@ font-family: "Montserrat", sans-serif;
             font-size: 2vw;
           }
             input{
+                transition: all ease 2s;
                 padding: 0 1vw;
                 width: 30vw;
                 height: 3vw;
@@ -63,6 +75,7 @@ font-family: "Montserrat", sans-serif;
         }
     }
     .botNav{
+        transition: all ease 2s;
         padding: 1vw 0;
         color: rgb(8, 0, 0);
         display: flex;
