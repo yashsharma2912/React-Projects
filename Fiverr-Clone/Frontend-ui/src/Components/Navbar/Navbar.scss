@@ -5,17 +5,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar{
+    position: sticky;
+    top: 0;
+}
 .container{
-background-color: #06431A;
+
 font-family: "Montserrat", sans-serif;
- padding: 1vw 12vw;
+ 
  text-wrap: nowrap;
  font-weight: 500;
- color: #fff;
-     h3{
-        font-size: 4vw;
-     }
+ color: #000000;
+    
     .topNav{
+        padding: 1vw 10vw;
+        // background-color: #06431A;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,6 +28,13 @@ font-family: "Montserrat", sans-serif;
           align-items: center;
           gap: 2vw;
           justify-content: space-between;
+          .dot{
+            color: #15A34F;
+            font-size: 2vw;
+          }
+          h2{
+            font-size: 2vw;
+          }
             input{
                 padding: 0 1vw;
                 width: 30vw;
@@ -50,6 +61,14 @@ font-family: "Montserrat", sans-serif;
                 background-color: #15A34F;
             }
         }
+    }
+    .botNav{
+        padding: 1vw 0;
+        color: rgb(8, 0, 0);
+        display: flex;
+        gap: 1.5vw;
+        align-items: center;
+        justify-content: center;
     }
 
 }

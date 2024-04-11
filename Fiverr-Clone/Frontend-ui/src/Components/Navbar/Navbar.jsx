@@ -18,9 +18,18 @@ const Navbar = () => {
                    <span className='join-btn'>Join</span>
                </div>
          </div>
+         <hr />
          <div className="botNav">
-
+            <span>Graphics & Design</span>
+            <span>Programming & Tech</span>
+            <span>Digital Marketing</span>
+            <span>Video & Animation</span>
+            <span>Writing & Translation</span>
+            <span>Music & Audio</span>
+            <span>Music & Audio</span>
+            <span>Music & Audio</span>
          </div>
+         <hr />
       </div>
     </div>
   )
