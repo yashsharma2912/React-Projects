@@ -13,16 +13,10 @@
     }
 }
 .container{
-    transition: 0.5s all ease;
-    position: sticky;
-    top: 0;
-    height: 10vh;
-    z-index: 999;
-font-family: "Montserrat", sans-serif;
-      
- text-wrap: nowrap;
- font-weight: 500;
- color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-wrap: nowrap;
+    font-weight: 500;
+    color: #fff;
           span{
             cursor: pointer;
           } 
@@ -67,7 +61,7 @@ font-family: "Montserrat", sans-serif;
         .right{
             display: flex;
             align-items: center;
-            margin-left: 18vw;
+            margin-left: 5vw;
             gap: 1.5vw;
             .join-btn{
                 border: 1px solid #fff;

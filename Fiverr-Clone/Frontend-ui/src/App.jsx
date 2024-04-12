@@ -1,10 +1,10 @@
 
 // Components Imports
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./Components/navbar/Navbar"
+import Home from "../src/Pages/Home/Home"
+import Gig from "./Pages/gig/Gig";
+import "./index.css";
 
-// Page components adding
-import Home from "./Pages/Home/Home"
-// react router dom
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,32 +13,33 @@ import {
   Link,
 } from "react-router-dom";
 
+const Layout = () => {
+  return (
+    <div className="app">
+      <Navbar/>
+      <Outlet/>
+    </div>
+  )
+}
 function App() {
-
-  const Layout = () => {
-    return(
-     <div className="app">
-        <Navbar/>
-        <Outlet/>
-     </div>
-    )
- }
 
   const router = createBrowserRouter([
     {
       path: "/",
       element : <Layout/>,
-      children : [
-          {
-               path : "/",
-               element : <Home/>
-          }
+      children:[
+        {
+          path: "/gig",
+          element : <Gig/>,
+        },
       ]
-    }
+    },
+   
+    
   ]);
   return (
     <>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
   )
 }

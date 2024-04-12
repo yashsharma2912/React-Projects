@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 
-import "../../Components/Navbar/Navbar.scss";
+import "../navbar/Navbar.scss"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   // variable for navbar effect
@@ -42,10 +43,10 @@ const Navbar = () => {
                   {!currentUser?.isSeller && <span className='join-btn'>Join</span> }
                   {currentUser?.isSeller && (
                     <div className="user" onClick={()=>setOpen(!open)} >
-                       <img src="https://tse3.mm.bing.net/th?id=OIP.ATVrWDqHffN2PsqCbGK8PAHaFj&pid=Api&P=0&h=220" alt="profile-pic" />
+                       <img src="https://up.yimg.com/ib/th?id=OIP.4z2feTp_Mw25d-lmn1wMdQAAAA&pid=Api&rs=1&c=1&qlt=95&w=80&h=99" alt="profile-pic" />
                        <span >{currentUser?.name}</span>
                       {open && (<div className="option">
-                        {currentUser?.isSeller && (<span>Gigs</span> ) }
+                        {currentUser?.isSeller && (<Link to="/gig">Gigs</Link> ) }
                         {currentUser?.isSeller && (<span>Add New Gigs</span> ) }
                       
                          <span>Orders</span>
