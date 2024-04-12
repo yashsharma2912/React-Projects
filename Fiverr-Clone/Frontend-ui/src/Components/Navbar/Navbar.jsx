@@ -4,12 +4,13 @@ import { useState } from 'react';
 import "../../Components/Navbar/Navbar.scss";
 
 const Navbar = () => {
+  // variable for navbar effect
   const[active,setActive] = useState(false);
 
   const handleScroll = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
-
+  // navbar effect hooks
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -17,6 +18,13 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const currentUser = {
+    id: 1,
+    name : "Yash",
+    isSeller : true,
+  }
+  const[open, setOpen] = useState(false);
   return (
     <div className='navbar'>
       <div className="container">
@@ -29,10 +37,25 @@ const Navbar = () => {
                    <span>Fiverr Pro</span>
                    <span>Explore</span>
                    <span>English</span>
-                   <span>Become a Seller</span>
+                  {!currentUser?.isSeller && <span>Become a Seller</span> }
                    <span>Sign in</span>
-                   <span className='join-btn'>Join</span>
+                  {!currentUser?.isSeller && <span className='join-btn'>Join</span> }
+                  {currentUser?.isSeller && (
+                    <div className="user" onClick={()=>setOpen(!open)} >
+                       <img src="https://tse3.mm.bing.net/th?id=OIP.ATVrWDqHffN2PsqCbGK8PAHaFj&pid=Api&P=0&h=220" alt="profile-pic" />
+                       <span >{currentUser?.name}</span>
+                      {open && (<div className="option">
+                        {currentUser?.isSeller && (<span>Gigs</span> ) }
+                        {currentUser?.isSeller && (<span>Add New Gigs</span> ) }
+                      
+                         <span>Orders</span>
+                         <span>Messages</span>
+                         <span>Logout</span>
+                       </div> )}
+                    </div> )}
+                  
                </div>
+               
          </div>
          <hr />
         {active && (<div className="botNav">
@@ -48,117 +71,9 @@ const Navbar = () => {
          }
          <hr />
       </div>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
-      <h1>yash</h1>
+  
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
