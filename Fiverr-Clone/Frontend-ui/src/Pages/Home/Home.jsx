@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
              </div>
              <div className="feature-right">
-                   <img src={fp} alt="" />
+                   {/* <img src={fp} alt="" /> */}
              </div>
             </div>
          </div>
