@@ -26,14 +26,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
         &.active{
             transition: all ease 0.3s;
             background-color: white;
             color: black;
+            border-bottom: 1px solid grey ;
+            .Link{
+                color: black;
+            }
         }
-        &.active .join-btn{
-            border: 1px solid green;
-        }
+        
         .left{
           display: flex;
           align-items: center;
@@ -79,10 +82,11 @@
                 cursor: pointer;
                 gap: 1vw;
                  img{
-                    width: 3vw;
-                    height: 3vw;
+                    width: 2.5vw;
+                    height: 2.5vw;
                     object-fit: cover;
                     border-radius: 50%;
+                    border: 1px solid white;
                  }
                 .option{
                     transition: all ease 0.5s;

@@ -1,0 +1,79 @@
+*{
+    font-family: "Montserrat", sans-serif; 
+}
+.Feature-container{
+    height: 45vw;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    text-wrap: nowrap;
+    background-color: #054315;
+}
+
+.h-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.59vw 8vw;
+    .feature-left{
+        position: relative;
+        left: 3vw;
+        top: 18vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        h3{
+            font-size: 3vw;
+            color: white;
+        }
+        input{
+            border: none;
+            outline: none;
+            padding:0.9vw 2vw;
+            width: 35vw;
+            border-radius: 3px;
+        }
+        .popularTag{
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            color: white;
+            p{
+                font-size: 1.2vw;
+            }
+            button{
+                background-color: transparent;
+                padding: 0.4vw 0.7vw;
+                border-radius: 35px;
+                color: white;
+                border: none;
+                border: 1px solid white;
+                cursor: pointer;
+            }
+        }
+    }  
+    .feature-right{
+        img{
+          width: 65vw;
+          
+        }
+    }
+}
+.featurePic{
+    width: 30vw;
+    height: 30vw;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.spons{
+    width: 100vw;
+    background-color: rgb(226, 226, 226);
+    height: 6vw;
+}
+
+.popularService{
+    padding: 5vw 10vw;
+     h3{
+        font-size: 2.3vw;
+        color: rgb(50, 45, 45);
+     }
+}

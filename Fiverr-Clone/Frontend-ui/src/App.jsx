@@ -29,9 +29,14 @@ function App() {
       element : <Layout/>,
       children:[
         {
+          path: "/",
+          element: <Home/>
+        },
+        {
           path: "/gig",
           element : <Gig/>,
         },
+
       ]
     },
    

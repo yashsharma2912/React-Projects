@@ -2,7 +2,9 @@ import React from 'react'
 
 const Gig = () => {
   return (
-    <div>Gig</div>
+    <>
+     <h3>Gig</h3>
+    </>
   )
 }
 

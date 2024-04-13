@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 
 import "../navbar/Navbar.scss"
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   // variable for navbar effect
   const[active,setActive] = useState(false);
 
   const handleScroll = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false);
+    window.scrollY > 4 ? setActive(true) : setActive(false);
   };
   // navbar effect hooks
   useEffect(() => {
@@ -19,7 +19,8 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+ // useLocation for Navbar 
+  const{pathname} = useLocation()
   const currentUser = {
     id: 1,
     name : "Yash",
@@ -29,10 +30,10 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="container">
-         <div className={active ? "topNav active" : "topNav"}>
+         <div className={active || pathname !=="/" ? "topNav active" : "topNav"}>
                <div className="left">
-                 <h2>fiverr <span className='dot'>.</span></h2>
-               {active && ( <input type="text" placeholder='What services are you looking for today?' /> )}
+                <Link to="/" className='Link'> <h2>fiverr <span className='dot'>.</span></h2> </Link>
+               {(active || pathname !=="/" ) && ( <input type="text" placeholder='What services are you looking for today?' /> )}
                </div>
                <div className="right">
                    <span>Fiverr Pro</span>
@@ -58,8 +59,8 @@ const Navbar = () => {
                </div>
                
          </div>
-         <hr />
-        {active && (<div className="botNav">
+         
+        { ( active  || pathname !=="/") && (<div className="botNav">
             <span>Graphics & Design</span>
             <span>Programming & Tech</span>
             <span>Digital Marketing</span>
@@ -70,7 +71,7 @@ const Navbar = () => {
             <span>Data</span>
          </div> )
          }
-         <hr />
+       
       </div>
   
     </div>
