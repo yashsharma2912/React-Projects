@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "vercel": "^34.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

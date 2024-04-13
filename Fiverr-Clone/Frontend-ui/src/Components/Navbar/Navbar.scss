@@ -21,7 +21,7 @@
             cursor: pointer;
           } 
     .topNav{
-        padding: 1vw 12vw;
+        padding: 2vw 12vw;
         background-color: #06431A;
         display: flex;
         align-items: center;
@@ -59,7 +59,8 @@
                 font-family: "Montserrat", sans-serif;
                 position: relative;
                 left: 2vw;
-                color: red; }
+                color: rgb(118, 115, 115);
+             }
         }
         .right{
             display: flex;
@@ -112,7 +113,7 @@
         }
     } 
     .botNav{
-       
+        border-bottom: 1px solid black;
         padding: 1vw 0;
         color: rgb(8, 0, 0);
         background-color: #fff;
