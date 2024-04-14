@@ -84,22 +84,21 @@
         font-size: 1vw;
     }
 }
-
-.popularService{
-    padding: 5vw 10vw;
-     h3{
-        font-size: 1.8vw;
-        color: rgb(91, 84, 84);
-     }
+.secHead{
+    font-size: 1.8vw;
+    color: rgb(91, 84, 84);
+    padding: 4vw 10vw;
 }
 
+
 .h-three{
-    padding: 0vw 8vw;
+    
     background-color: #c7e9c33d;
     width: 100vw;
     height: 45vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5vw;
     align-items: center;
     .left-sp{
         display: flex;
@@ -121,7 +120,51 @@
         font-weight: 600;
     }
     video{
+        overflow: hidden;
         width: 45vw;
         border-radius: 5px;
+        
     }
+}
+
+.h-five{
+    padding: 0vw 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 38vw;
+    background-color: #0B083E;
+    color: white;
+    
+    .left-baner{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        span{
+            font-weight: 800;
+        }
+         h3{
+            font-size: 2vw;
+            font-weight: 300;
+         }
+         h2{
+            font-size: 2.5vw;
+            text-wrap: nowrap;
+            font-weight: 500;
+         }
+         button{
+            padding: 1vw;
+            width: 10vw;
+            background-color: #f3880f;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+         }
+    }
+       img{
+        width: 40vw;
+       }
 }

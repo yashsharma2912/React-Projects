@@ -21,6 +21,7 @@ const Layout = () => {
     </div>
   )
 }
+
 function App() {
 
   const router = createBrowserRouter([
@@ -38,9 +39,7 @@ function App() {
         },
 
       ]
-    },
-   
-    
+    },  
   ]);
   return (
     <>

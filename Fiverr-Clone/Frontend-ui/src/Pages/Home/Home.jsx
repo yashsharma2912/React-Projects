@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Home/Home.scss"
 
-import Slide from '../../Components/slide/Slide'
+
 
 import fp from "../Home/1.png"
 import meta from "../Home/meta.png"
@@ -11,6 +11,10 @@ import png from "../Home/png.png"
 import paypal from "../Home/paypal.png"
 
 import sp from "../Home/sp.mp4"
+import poster from "../Home/Sp.png"
+
+import banerImg from "../Home/baner.png"
+
 
 
 const Home = () => {
@@ -46,7 +50,7 @@ const Home = () => {
          </div>
 
          <div className="popularService">
-            <h3>Popular Services</h3>
+            <h3 className='secHead'>Popular Services</h3>
          </div>
         
 
@@ -71,7 +75,32 @@ const Home = () => {
                </div>
            </div>
            <div className="right-sp">
-                 <video src={sp} controls></video>
+                 <video src={sp} controls poster={poster}></video>
+           </div>
+        </div>
+
+        <div className="h-four">
+         <h3 className='secHead'>You need it, we've got it</h3>
+
+        </div>
+
+        <div className="h-five">
+           <div className="left-baner">
+                <h3><span>fiverr</span> pro.</h3>
+                <h2>We're here for your <br /><span>e-commerce</span> everything</h2>
+               <div className="banerinfo">
+               <p>Get a project manager <br />
+                   to guide you through each stage of launching your e-Commerce business<p/> <br />
+                <p>Accelerate time-to-market <br />
+                   with a dedicated team of top-tier freelance experts</p> <br />
+                <p>Optimize your budget <br />
+                   with a dedicated project manager who will handle all your tasks, leaving you more money for marketing and growth</p>
+               </p>
+               </div>
+               <button>Get started</button>
+           </div>
+           <div className="right-baner">
+             <img src={banerImg} alt="" />
            </div>
         </div>
     </div>
