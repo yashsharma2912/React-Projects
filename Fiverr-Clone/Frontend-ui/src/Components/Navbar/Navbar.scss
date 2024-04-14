@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .navbar{
-  
+  width: 100vw;
     &.active{
         background-color: #fff;
         color: black;
@@ -21,7 +21,7 @@
             cursor: pointer;
           } 
     .topNav{
-        padding: 2vw 12vw;
+        padding: 1vw 12vw;
         background-color: #06431A;
         display: flex;
         align-items: center;
@@ -113,14 +113,22 @@
         }
     } 
     .botNav{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(199, 199, 199, 0.415);
         padding: 1vw 0;
         color: rgb(8, 0, 0);
         background-color: #fff;
+        max-height: 3.2vw;
         display: flex;
         gap: 1.5vw;
         align-items: center;
         justify-content: center;
+        span{
+            padding: 0.5vw;
+        }
+         span:hover{
+           
+            border-bottom: 3px solid lightgreen ;
+         }
     }
 
 }

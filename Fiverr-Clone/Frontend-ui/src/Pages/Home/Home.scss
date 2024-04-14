@@ -3,7 +3,7 @@
 }
 .Feature-container{
     height: 45vw;
-    width: 100%;
+    width: 100vw;
     font-family: "Montserrat", sans-serif;
     text-wrap: nowrap;
     background-color: #054315;
@@ -70,14 +70,58 @@
 
 .spons{
     width: 100vw;
-    background-color: rgb(226, 226, 226);
+    background-color: #fbfbfb;
     height: 6vw;
+}
+.spons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    h3{
+        color: rgb(166, 157, 157);
+        font-weight: 600;
+        font-size: 1vw;
+    }
 }
 
 .popularService{
     padding: 5vw 10vw;
      h3{
-        font-size: 2.3vw;
-        color: rgb(50, 45, 45);
+        font-size: 1.8vw;
+        color: rgb(91, 84, 84);
      }
+}
+
+.h-three{
+    padding: 0vw 8vw;
+    background-color: #c7e9c33d;
+    width: 100vw;
+    height: 45vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-sp{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        li{
+            font-weight: 700;
+            font-size: 1.2vw;
+        }
+        p{
+            position: relative;
+            font-size: 1.2vw;
+            left: 1.6vw;
+            top: 0.2vw;
+        }
+    }
+    h3{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    video{
+        width: 45vw;
+        border-radius: 5px;
+    }
 }
