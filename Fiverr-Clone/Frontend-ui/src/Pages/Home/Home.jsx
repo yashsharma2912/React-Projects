@@ -23,7 +23,7 @@ const Home = () => {
          <div className="Feature-container">
             <div className="h-one">
               <div className="feature-left">
-                <h3>Find the right <i>freelance</i> <br /> Yash, right away</h3>
+                <h3>Find the right <i>freelance</i> <br /> services, right away</h3>
                 <input type="text" placeholder='Search for any service...' />
                 <div className="popularTag">
                    <p>Popular:</p>
