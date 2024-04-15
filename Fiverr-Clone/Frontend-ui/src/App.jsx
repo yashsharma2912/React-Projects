@@ -2,6 +2,7 @@
 // Components Imports
 import Navbar from "./Components/navbar/Navbar"
 import Home from "../src/Pages/Home/Home"
+import Footer from "./Components/footer/Footer";
 import Gig from "./Pages/gig/Gig";
 import "./index.css";
 
@@ -13,11 +14,13 @@ import {
   Link,
 } from "react-router-dom";
 
+
 const Layout = () => {
   return (
     <div className="app">
       <Navbar/>
       <Outlet/>
+      <Footer/>
     </div>
   )
 }

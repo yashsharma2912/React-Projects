@@ -1,0 +1,46 @@
+.footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   
+}
+.topF{
+    gap: 5vw;
+    display: flex;
+    margin-top: 2vw;
+    padding: 4vw;
+    border-top:1px solid grey ;
+    border-bottom:1px solid grey ;
+      .ftcol{
+        display: flex;
+        flex-direction: column;  
+        gap: 1vw;
+            h3{
+                font-size: 1.1vw;
+            }
+        .link{
+            text-decoration: none;
+            text-wrap: nowrap;
+            color: darkslategrey;
+            font-size: 1vw;
+          }
+      }
+}
+.botF{
+    display: flex;
+     .fbLeft{
+        padding: 0.5vw;
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        justify-content: flex-start;
+           h3{
+            font-size: 2vw;
+            font-weight: 800;
+            color: grey;
+           }
+           h4{
+            font-weight: 400;
+           }
+     }
+}
