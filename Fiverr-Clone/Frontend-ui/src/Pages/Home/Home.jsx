@@ -14,6 +14,7 @@ import sp from "../Home/sp.mp4"
 import poster from "../Home/Sp.png"
 
 import banerImg from "../Home/baner.png"
+import Slide from '../../Components/slide/Slide'
 
 
 
@@ -48,9 +49,9 @@ const Home = () => {
                <img src={png} alt="" />
                <img src={paypal} alt="" />
          </div>
-
          <div className="popularService">
             <h3 className='secHead'>Popular Services</h3>
+           <Slide className="psSlide"/>
          </div>
         
 
