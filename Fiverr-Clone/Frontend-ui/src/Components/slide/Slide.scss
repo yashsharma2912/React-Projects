@@ -20,6 +20,10 @@
     width: 80%;
     height: 100%;
   }
+  .swiper-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
   .slideInfo{
     z-index: 99;
     position: relative;
@@ -32,6 +36,9 @@
   .pscardinfo{
     position: absolute;
     padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
        p,h3{
         color: white;
        }
@@ -42,4 +49,54 @@
     height: 100%;
     object-fit: cover;
   }
+  .swiper-button-prev{
+       background-color: rgb(211, 224, 224);
+       position: absolute;
+       right: 12vw;
+       border-radius: 50%;
+       color: black;
+       width: 4vw;
+       height: 4vw;
+  }
+  .swiper-button-next{
+       background-color: rgb(211, 224, 224);
+       position: absolute;
+       border-radius: 50%;
+       font-size: 2vw;
+       color: black;
+       width: 4vw;
+       height: 4vw;
+  }
+
+.mySwiper2{
+ 
+}
+ .ss2{
+  height: 19vw;
+   display: flex;
+   border: 1px solid rgb(194, 192, 192);
+   flex-direction: column;
+   background-color: rgb(255, 255, 255);
+         .workThumb{
+           object-fit: cover;
+         }
+  }
   
+  .workBot{
+    position: relative;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    padding: 1vw;
+    .wo{
+      display: flex;
+      flex-direction: column;
+    }
+    img{
+      position: relative;
+      width: 3vw;
+      height: 3vw;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }

@@ -15,6 +15,7 @@ import poster from "../Home/Sp.png"
 
 import banerImg from "../Home/baner.png"
 import Slide from '../../Components/slide/Slide'
+import { Slide2 } from '../../Components/slide/Slide'
 
 
 
@@ -103,6 +104,11 @@ const Home = () => {
            <div className="right-baner">
              <img src={banerImg} alt="" />
            </div>
+        </div>
+
+        <div className="h-six">
+            <h3 className='secHead'> Inspiring work made on fiverr</h3>
+            <Slide2/>
         </div>
     </div>
   )
