@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 
 import "../navbar/Navbar.scss"
+import { TbWorld } from "react-icons/tb";
+import { BsCurrencyRupee } from "react-icons/bs";
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -36,9 +38,9 @@ const Navbar = () => {
                {(active || pathname !=="/" ) && ( <input type="text" placeholder='What services are you looking for today?' /> )}
                </div>
                <div className="right">
-                   <span>Fiverr Pro</span>
-                   <span>Explore</span>
-                   <span>English</span>
+                {}   <Link className={active ? 'active' : "link"}>Fiverr Pro</Link>
+                   <Link className={active ? 'active' : "link"}>Explore</Link>
+                   <Link className={active ? 'active' : "link"}><TbWorld/>English</Link>
                   {!currentUser?.isSeller && <span>Become a Seller</span> }
                   {!currentUser?.isSeller && <span>Sign in</span> }
                   {!currentUser?.isSeller && <span className='join-btn'>Join</span> }

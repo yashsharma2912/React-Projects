@@ -2,6 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "../footer/Footer.scss"
 
+import { FaTiktok } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
+import { TbWorld } from "react-icons/tb";
+import { BsCurrencyRupee } from "react-icons/bs";
+import { RxAccessibility } from "react-icons/rx";
+
+
 const Footer = () => {
   return (
    <div className="footer">
@@ -55,7 +67,19 @@ const Footer = () => {
            <h4> © Fiverr International Ltd. 2024</h4>
         </div>
         <div className="fbRight">
-               
+               <div className="footIcon">
+                    <FaTiktok/>
+                    <FaInstagram/>
+                    <FaLinkedin/>
+                    <FaFacebook/>
+                    <FaPinterest/>
+                    <FaTwitter/>
+               </div>
+               <div className="footTools">
+                <p><TbWorld/>English</p>
+                 <p><BsCurrencyRupee/>INR</p>
+                 <span><RxAccessibility/></span>
+               </div>
         </div>
      </div>
    </div>

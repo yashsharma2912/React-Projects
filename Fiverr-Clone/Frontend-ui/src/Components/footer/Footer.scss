@@ -27,20 +27,48 @@
       }
 }
 .botF{
+   padding: 1.5vw ;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28vw;
+       h3{
+        font-size: 1.7vw;
+        font-weight: 800;
+        color: grey;
+       }
+       h4{
+        font-weight: 400;
+        color: gray;
+        text-wrap: nowrap;
+       }
      .fbLeft{
-        padding: 0.5vw;
         display: flex;
+        gap: 1.5vw;
         align-items: center;
+     }
+     .fbRight{
+        display: flex;
         gap: 2vw;
-        justify-content: flex-start;
-           h3{
-            font-size: 2vw;
-            font-weight: 800;
-            color: grey;
-           }
-           h4{
-            font-weight: 400;
-           }
+        color: grey;
+        align-items: center;
+            .footIcon{
+                display: flex;
+                gap: 1vw;
+                font-size: 1.3vw;
+            }
+            .footTools{
+                display: flex;
+                gap: 1vw;
+                span{
+                    font-size: 2.2vw;
+                    font-weight: 200;
+                }
+                p{
+                    display: flex;
+                    gap: 0.3vw;
+                    align-items: center;
+                }
+            }
      }
 }
