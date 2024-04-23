@@ -1,0 +1,89 @@
+.gigContainer{
+   padding: 1.5vw 8vw;
+   display: flex;
+   justify-content: space-between;
+   
+    .leftGig{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+         h1{
+            font-size: 1.8vw;
+         }
+        .profile{
+            display: flex;
+            gap: 1vw;
+            align-items: center;
+           img{
+            border-radius: 50%;
+            width: 2.3vw;
+           }
+            h3{
+            font-weight: 500;
+           } 
+           .star{
+            display: flex;
+            gap: 0.2vw;
+            color: orange;
+           }
+        }
+        .gigSwipe{
+            width: 60%;
+            height: 20vw;
+            .mySwiper{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+    }
+    .rightGig{
+        position: sticky;
+        top: 0vw;
+        width: 32vw;
+        height: 24vw;
+        border: 1px solid lightgray;
+        border-radius: 0.3vw;
+         .rdesc{
+            padding: 1vw 1.5vw;
+         } 
+        .r1,.r2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1vw 1.5vw;
+         }
+         .r2{
+            p{
+                display: flex;
+                align-items: center;
+                gap: 0.4vw;
+            }
+         }
+         .r3{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5vw;
+            padding: 1vw 1.5vw;
+            .check{
+                color: green;
+            }
+            span{
+                display: flex;
+                gap: 0.5vw;
+            }
+         }
+
+         button{
+            padding: 0.65vw 12vw;
+            font-size: 1vw;
+            cursor: pointer;
+            background-color: rgb(35, 160, 35);
+            border: none;
+            border-radius: 0.1vw;
+            color: white;
+            margin-top: 0.5vw;
+            margin-left: 2vw;
+         }         
+    }
+}

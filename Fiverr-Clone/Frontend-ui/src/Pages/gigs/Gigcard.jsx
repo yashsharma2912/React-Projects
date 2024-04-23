@@ -1,6 +1,8 @@
 import React from 'react'
 import "../gigs/gc.scss"
 
+import{ Link } from "react-router-dom"
+
 import { FaHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 
@@ -8,6 +10,7 @@ import { FaStar } from "react-icons/fa";
 const Gigcard = (props) => {
   return (
     <div className='gigcard'>
+      <Link className='link' to="/gig">
         <div className="top">
             <img src={props.img} className='gigpic' alt="" />
             <div className="topinfo">
@@ -26,6 +29,7 @@ const Gigcard = (props) => {
                  <h3>${props.price}</h3>
              </div>
         </div>
+    </Link>
     </div>
   )
 }

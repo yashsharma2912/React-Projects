@@ -1,11 +1,15 @@
 .gigcard{
-    width: 19vw;
+    width: 18vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
     height: 22vw;
     border: 1px solid lightgrey;
+    .link{
+      text-decoration: none;
+      color: black;
+    }
     .top{
         display: flex;
         flex-direction: column;
