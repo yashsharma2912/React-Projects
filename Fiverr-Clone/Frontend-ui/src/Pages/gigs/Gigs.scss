@@ -1,7 +1,65 @@
 .gigs{
-
+ .topinfon{
+    padding: 1vw 8.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    .left{
+        display: flex;
+        gap: 0.4vw;
+        align-items: center;
+        input{
+            padding: 0.4vw;
+            border: 1px solid lightgray;
+            border-radius: 0.2vw;
+            outline: none;
+        }
+        button{
+            padding: 0.45vw;
+            outline: none;
+            border: none;
+            border-radius: 0.2vw;
+            color: white;
+            background-color: rgb(18, 158, 18);
+        }
+    }
+     .sort{
+        
+        justify-content: space-between;
+        display: flex;
+         .right{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5vw;
+            .tit{
+                cursor: pointer;
+            }
+             p{
+                font-weight: 600;
+             }
+         }
+        .rightlist{
+            position: absolute;
+            padding: 1vw;
+            border-radius: 0.2vw;
+            text-wrap: nowrap;
+            left: 3.7vw;
+            cursor: pointer;
+            top: 2.5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5vw;
+            font-weight: 500;
+            color: rgb(77, 76, 76);
+            border: 1px solid lightgray;
+            background-color: rgb(255, 255, 255);
+        }
+     }
+ }
     .cards{
-        padding: 2vw 0;
+        padding: 0.5vw 0;
         justify-content: center;
         align-items: center;
         display: flex;
