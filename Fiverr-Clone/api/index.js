@@ -2,18 +2,20 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv"
 
-const app = express();
+ const app = express();
 dotenv.config();
 mongoose.set('strictQuery', true);
 
+const connect = async() => {
 try {
-    await mongoose.connect('mongodb+srv://syash:yash@123@cluster0.5jcresn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    await mongoose.connect(process.env.mongo);
+    console.log("msg from mongoDB")
   } catch (error) {
     console.log(error);
   }
+}
 
-app.listen(8800,() => {
- console.log(
-    "backend connected"
- )
+app.listen(8000,() => {
+ connect();
+ console.log("backend connected");
 })

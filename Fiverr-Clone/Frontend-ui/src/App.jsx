@@ -4,14 +4,14 @@ import Navbar from "./Components/navbar/Navbar"
 import Home from "../src/Pages/Home/Home"
 import Footer from "./Components/footer/Footer";
 import Gig from "./Pages/gig/Gig";
+import Gigs from "./Pages/gigs/Gigs";
+
 import "./index.css";
 
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
-  Route,
-  Link,
 } from "react-router-dom";
 
 
@@ -39,6 +39,10 @@ function App() {
         {
           path: "/gig",
           element : <Gig/>,
+        },
+        {
+          path: "/gigs",
+          element : <Gigs/>,
         },
 
       ]

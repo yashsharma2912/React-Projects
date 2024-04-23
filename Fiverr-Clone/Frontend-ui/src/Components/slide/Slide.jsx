@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Link } from 'react-router-dom';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,76 +22,18 @@ export default function App() {
        navigation={true} 
        modules={[Navigation]}
        className="mySwiper">
+
         <SwiperSlide>
+        <Link to="/gigs">
             <div className="pscardinfo">
             <p className="psdesc">This is Desc of this card</p>
             <h3>Logo Designing</h3>
             </div>
             <img src={ps1} alt="" />
+        </Link>
         </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="pscardinfo">
-            <p className="psdesc">This is Desc of this card</p>
-            <h3>Logo Designing</h3>
-            </div>
-            <img src={ps1} alt="" />
-        </SwiperSlide>
+         
+       
      
        
       </Swiper>
