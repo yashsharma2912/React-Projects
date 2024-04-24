@@ -27,19 +27,21 @@
             color: orange;
            }
         }
-        .gigSwipe{
-            width: 60%;
-            height: 20vw;
-            .mySwiper{
-                display: flex;
-                justify-content: center;
+        .lSwipe{
+            width: 50vw;
+            .swiper-button-prev, .swiper-button-next{
+                background-color: white;
+            }
+            .swiper-button-prev::after, .swiper-button-next::after{
+                font-size: 2vw;
             }
         }
         
     }
     .rightGig{
         position: sticky;
-        top: 0vw;
+        top: 10vw;
+        // z-index: 999;
         width: 32vw;
         height: 24vw;
         border: 1px solid lightgray;

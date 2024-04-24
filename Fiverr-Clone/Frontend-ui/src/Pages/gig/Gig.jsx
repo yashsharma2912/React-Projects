@@ -38,15 +38,22 @@ const Gig = () => {
                <span>4</span>
             </div>
           </div>
-              {/* <div className="gigSwipe">
-              <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                 <SwiperSlide>Slide 1</SwiperSlide>
-                 <SwiperSlide>Slide 1</SwiperSlide>
-                 <SwiperSlide>Slide 1</SwiperSlide>
-                 <SwiperSlide>Slide 1</SwiperSlide>
-                 <SwiperSlide>Slide 1</SwiperSlide>
-              </Swiper>
-              </div> */}
+              <div className="lSwipe">
+                  <Swiper navigation={true} loop={true} modules={[Navigation]}>
+                      <SwiperSlide>
+                           <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/110928855/original/8b65c55172f99d57b28fe8030a9d6695f2f21a6f/do-minimalist-logo-design.jpg" alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                           <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/f63018122fb99932d345e82fa6a89f2c-1713911042/Opt%2006/create-modern-minimalist-logo-design.jpg" alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                           <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/170694345/original/e675351539a399d01ca7687825a6c0084e5ea0f7/create-modern-minimalist-logo-design.jpg" alt="" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                           <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/110928855/original/8b65c55172f99d57b28fe8030a9d6695f2f21a6f/do-minimalist-logo-design.jpg" alt="" />
+                      </SwiperSlide>
+                  </Swiper>
+              </div>
          </div>
 
          <div className="rightGig">
