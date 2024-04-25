@@ -49,12 +49,12 @@ const Navbar = () => {
                        <img src="https://up.yimg.com/ib/th?id=OIP.4z2feTp_Mw25d-lmn1wMdQAAAA&pid=Api&rs=1&c=1&qlt=95&w=80&h=99" alt="profile-pic" />
                        <span >{currentUser?.name}</span>
                       {open && (<div className="option">
-                        {currentUser?.isSeller && (<Link to="/gig">Gigs</Link> ) }
-                        {currentUser?.isSeller && (<span>Add New Gigs</span> ) }
+                        {currentUser?.isSeller && (<Link to="/MyGigs" className='menuLink'>Gigs</Link> ) }
+                        {currentUser?.isSeller && (<Link to="/Add" className='menuLink'>Add New Gig</Link> ) }
                       
-                         <span>Orders</span>
-                         <span>Messages</span>
-                         <span>Logout</span>
+                         <Link to="" className='menuLink'>Orders</Link>
+                         <Link to="" className='menuLink'>Messages</Link>
+                         <Link to="" className='menuLink'>Logout</Link>
                        </div> )}
                     </div> )}
                   

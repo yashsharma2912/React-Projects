@@ -36,7 +36,44 @@
                 font-size: 2vw;
             }
         }
-        
+        .aboutGig{
+            margin-top: 2.5vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+             h4{
+                font-size: 1.4vw;
+             }
+             p{
+                width: 45vw;
+             }
+        }
+        .rwbox{
+            margin-top: 2.5vw;
+            padding: 2vw;
+            width: 45vw;
+            border-top: 1px solid lightgray;
+            // border-bottom: 1px solid lightgray;
+            display: flex;
+            gap: 1vw;
+            .rL{
+                display: flex;
+                flex-direction: column;
+                gap: 0.4vw;
+                 span{
+                    font-weight: 600;
+                 }
+            }
+             h3{
+                background-color: rgb(239, 102, 102);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.5vw;
+                height: 2.5vw;
+             }
+        }
     }
     .rightGig{
         position: sticky;
@@ -77,15 +114,15 @@
          }
 
          button{
-            padding: 0.65vw 12vw;
+            padding: 0.65vw 10vw;
             font-size: 1vw;
             cursor: pointer;
             background-color: rgb(35, 160, 35);
             border: none;
             border-radius: 0.1vw;
             color: white;
-            margin-top: 0.5vw;
-            margin-left: 2vw;
+            margin-top: 0.8vw;
+            margin-left: 1vw;
          }         
     }
 }

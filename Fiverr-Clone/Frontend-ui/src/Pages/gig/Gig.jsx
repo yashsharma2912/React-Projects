@@ -54,6 +54,50 @@ const Gig = () => {
                       </SwiperSlide>
                   </Swiper>
               </div>
+
+              <div className="aboutGig">
+                  <h4>About this gig</h4>
+                  <p>
+                  Welcome to my Modern Minimalist Logo Design Gig.
+
+As an experienced graphics designer, I am happy to have you on my gig and would love to let you know a bit briefly about me. I have more than 12 years of professional experience working with 1000+ clients worldwide. 
+
+
+
+YOU ARE HERE!! It simply means that you are having a good eye for the designs :)
+
+
+
+I have expertise in creating Modern and Premium brand identities. Each business requires a professional logo to effectively convey its services and create an everlasting presence.  
+
+Thus, We focus on creating simple yet effective designs that leave an enduring impression on the customer's mind.
+                  </p>
+              </div>
+
+              <div className="reviews">
+                  <div className="rwbox">
+                     <div className="rR">
+                        <h3>M</h3>
+                     </div>
+                     <div className="rL">
+                       <h4>medlenmax</h4>
+                       <p>❤️ United States</p>
+                      <p>I am very pleased with the final result and Abhi was very motivated to reach that point. To get there was a long process however that I was frustrated with at times. I felt it was hard to get across what I was looking for and I believe a language...</p>
+                      <span>Helpful? <span>Yes</span> <span>No</span></span>
+                     </div>
+                  </div>
+                  <div className="rwbox">
+                     <div className="rR">
+                        <h3>M</h3>
+                     </div>
+                     <div className="rL">
+                       <h4>medlenmax</h4>
+                       <p>❤️ United States</p>
+                      <p>I am very pleased with the final result and Abhi was very motivated to reach that point. To get there was a long process however that I was frustrated with at times. I felt it was hard to get across what I was looking for and I believe a language...</p>
+                      <span>Helpful? <span>Yes</span> <span>No</span></span>
+                     </div>
+                  </div>
+              </div>
          </div>
 
          <div className="rightGig">
@@ -71,8 +115,8 @@ const Gig = () => {
                  <span><FaCheck className='check'/> Artwork Delivery</span>
                  <span><FaCheck className='check'/> Image Upscaling</span>
                  <span><FaCheck className='check'/> Additional Design</span>
-              </div>
                  <button>Continue</button>
+              </div>
          </div>
       </div>
     </>

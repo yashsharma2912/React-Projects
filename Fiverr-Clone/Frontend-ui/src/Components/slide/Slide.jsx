@@ -18,11 +18,65 @@ export default function App() {
     <>
       <Swiper 
        slidesPerView={5}
-       spaceBetween={15}
+       spaceBetween={20}
        navigation={true} 
        modules={[Navigation]}
        className="mySwiper">
 
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Link to="/gigs">
+            <div className="pscardinfo">
+            <p className="psdesc">This is Desc of this card</p>
+            <h3>Logo Designing</h3>
+            </div>
+            <img src={ps1} alt="" />
+        </Link>
+        </SwiperSlide>
         <SwiperSlide>
         <Link to="/gigs">
             <div className="pscardinfo">

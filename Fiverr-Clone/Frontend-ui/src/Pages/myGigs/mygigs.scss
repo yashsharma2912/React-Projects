@@ -1,0 +1,53 @@
+.myGigs{
+    display: flex;
+    flex-direction: column;
+    .topmg{
+       padding: 2vw 5vw;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+        button{
+            border: none;
+            outline: none;
+            padding: 0.8vw 1vw;
+            border-radius: 0.3vw;
+            color: white;
+            cursor: pointer;
+            background-color: rgb(33, 131, 33);
+        }
+    }
+    .botmg{
+        display: flex;
+        justify-content: center;
+        table{
+            padding: 2vw 5vw;
+            width: 100vw;
+            tr{
+                
+                text-align: left;
+                height: 2vw;
+                &:nth-child(even){
+                    background-color: rgb(224, 255, 177);
+                }
+               th{
+                // border: 1px solid lightgray;
+                padding: 0.5vw;
+                font-weight: 550;
+                font-size: 1vw;
+                   h3{
+                    font-weight: 550;
+                    font-size: 1vw;
+                   }
+                   .del{
+                    cursor: pointer;
+                    color: red;
+                    font-size: 1.7vw;
+                   }
+               }
+            }
+        }
+         .gigImg{
+            width: 5vw;
+         }
+    }
+}
