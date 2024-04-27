@@ -6,6 +6,7 @@ import Footer from "./Components/footer/Footer";
 import Gig from "./Pages/gig/Gig";
 import Gigs from "./Pages/gigs/Gigs";
 import MyGigs from "./Pages/myGigs/MyGigs";
+import Orders from "./Pages/orders/Orders";
 
 import "./index.css";
 
@@ -48,6 +49,10 @@ function App() {
         {
           path: "/MyGigs",
           element : <MyGigs/>,
+        },       
+        {
+          path: "/orders",
+          element : <Orders/>,
         },
 
       ]

@@ -52,9 +52,9 @@ const Navbar = () => {
                         {currentUser?.isSeller && (<Link to="/MyGigs" className='menuLink'>Gigs</Link> ) }
                         {currentUser?.isSeller && (<Link to="/Add" className='menuLink'>Add New Gig</Link> ) }
                       
-                         <Link to="" className='menuLink'>Orders</Link>
-                         <Link to="" className='menuLink'>Messages</Link>
-                         <Link to="" className='menuLink'>Logout</Link>
+                         <Link to="/orders" className='menuLink'>Orders</Link>
+                         <Link to="/messages" className='menuLink'>Messages</Link>
+                         <Link to="/logout" className='menuLink'>Logout</Link>
                        </div> )}
                     </div> )}
                   
